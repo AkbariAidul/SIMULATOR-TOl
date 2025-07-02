@@ -79,8 +79,8 @@ Aplikasi ini dibangun untuk memvisualisasikan bagaimana berbagai parameter seper
 
 ## 👥 Anggota Kelompok
 
-* **[Nama Orang 1]** - [NIM]
-* **[Nama Orang 2]** - [NIM]
-* **[Nama Orang 3]** - [NIM]
-* **[Nama Orang 4]** - [NIM]
-* **[Nama Orang 5]** - [NIM]
+* **[Aidul Akbari]**
+* **[Iqbal Rupawan]**
+* **[Muhammad Basirun Arafi]**
+* **[Halimatus Sa'diah]**
+* **[Lailatul Mubarokah]**
