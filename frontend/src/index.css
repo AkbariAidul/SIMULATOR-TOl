@@ -1,0 +1,44 @@
+/* frontend/src/index.css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Animasi untuk mobil yang baru masuk antrean */
+@keyframes drive-in {
+  from {
+    opacity: 0;
+    transform: translateY(60px) scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+.animate-drive-in {
+  animation: drive-in 0.5s ease-out forwards;
+}
+
+/* Animasi untuk mobil yang melewati gardu tol */
+@keyframes drive-through {
+  0% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-200px) scale(0.4);
+  }
+}
+.animate-drive-through {
+  animation: drive-through 2s ease-in forwards;
+}
+
+/* Animasi untuk log agar muncul dengan mulus */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-in-out;
+}
