@@ -1,5 +1,3 @@
-#  टोल गेट सिम्युलेटर
-
 Ini adalah proyek UAS (Ujian Akhir Semester) untuk mata kuliah **Struktur Data** dan **Pemrograman Berorientasi Objek (PBO)**. Proyek ini merupakan aplikasi web full-stack untuk mensimulasikan dan menganalisis sistem antrean di gerbang tol.
 
 Aplikasi ini dibangun untuk memvisualisasikan bagaimana berbagai parameter seperti jumlah gardu, kepadatan lalu lintas, dan pola kedatangan kendaraan dapat mempengaruhi efisiensi gerbang tol, seperti waktu tunggu rata-rata dan panjang antrean.
@@ -46,7 +44,7 @@ Aplikasi ini dibangun untuk memvisualisasikan bagaimana berbagai parameter seper
 
 1.  **Clone repository ini:**
     ```bash
-    git clone [URL_REPOSITORY_ANDA]
+    git clone [URL_REPOSITORY]
     cd [NAMA_FOLDER_PROYEK]
     ```
 
