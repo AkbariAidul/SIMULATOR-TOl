@@ -1,32 +1,12 @@
 [
     {
-        "name": "Test",
+        "name": "Jam Sibuk 1/2",
         "config": {
-            "garduOtomatis": 3,
-            "garduManual": 1,
-            "mobilPerMenit": 45,
-            "persentaseEToll": 85,
-            "durasiSimulasiDetik": 300
-        }
-    },
-    {
-        "name": "Lagi agak macet",
-        "config": {
-            "garduOtomatis": 3,
-            "garduManual": 1,
-            "mobilPerMenit": 77,
-            "persentaseEToll": 85,
-            "durasiSimulasiDetik": 300
-        }
-    },
-    {
-        "name": "new",
-        "config": {
-            "garduOtomatis": 3,
-            "garduManual": 0,
-            "mobilPerMenit": 29,
-            "persentaseEToll": 15,
-            "durasiSimulasiDetik": 300,
+            "garduOtomatis": 2,
+            "garduManual": 2,
+            "mobilPerMenit": 120,
+            "persentaseEToll": 50,
+            "durasiSimulasiDetik": 1800,
             "polaTrafik": "jam_sibuk"
         }
     }

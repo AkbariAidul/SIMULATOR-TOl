@@ -4,12 +4,12 @@ import os
 from flask import Flask, jsonify, request
 from flask_cors import CORS
 
-# --- Konfigurasi Aplikasi Flask & Database ---
+# Konfigurasi Aplikasi Flask
 app = Flask(__name__)
-CORS(app, resources={r"/api/*": {"origins": "http://localhost:3000"}})
+CORS(app, resources={r"/api/*": {"origins": "http://localhost:3000"}}) 
 DB_FILE = "scenarios_db.json"
 
-# --- Fungsi Helper untuk Database JSON ---
+# Fungsi Helper untuk Database JSON 
 def load_db():
     if not os.path.exists(DB_FILE):
         return []
@@ -23,10 +23,7 @@ def save_db(data):
     with open(DB_FILE, 'w') as f:
         json.dump(data, f, indent=4)
 
-
-# ====================================================================
-# KELAS-KELAS SIMULASI
-# ====================================================================
+# KELAS-KELAS 
 class Mobil:
     def __init__(self, id_mobil, tipe_pembayaran, waktu_kedatangan):
         self.id = id_mobil
@@ -109,7 +106,6 @@ class Simulator:
                     if not log_event:
                         log_event = f"{gardu.id} selesai melayani Mobil #{mobil_yang_selesai.id}."
 
-            # --- PERBAIKAN LOGIKA ---
             # Acak urutan gardu agar distribusi lebih merata
             gardu_cek_acak = self.list_gardu[:]
             random.shuffle(gardu_cek_acak)
@@ -146,9 +142,7 @@ class Simulator:
             }
         }
 
-# ====================================================================
 # BAGIAN API ENDPOINT
-# ====================================================================
 @app.route('/api/simulate', methods=['POST'])
 def simulate():
     config = request.json; simulator = Simulator(config); hasil = simulator.run(); return jsonify(hasil)

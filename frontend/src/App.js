@@ -1,15 +1,10 @@
-// frontend/src/App.js
-
 import React, { useState, useEffect, useMemo, useRef } from 'react';
-// Import library dan ikon yang dibutuhkan
+// Import library dan ikon
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 import toast, { Toaster } from 'react-hot-toast';
 import { FaRoad, FaPlay, FaSave, FaFolderOpen, FaChartLine, FaListAlt, FaFileContract } from 'react-icons/fa';
 
-// ====================================================================
-// KOMPONEN VISUAL AKHIR
-// ====================================================================
-
+// KOMPONEN VISUAL
 const Stars = () => (
   <div className="absolute top-0 left-0 w-full h-full">
     {[...Array(50)].map((_, i) => (
@@ -66,7 +61,6 @@ const MobilAntre = ({ position, carData, isLeaving }) => (
   </div>
 );
 
-// --- PERBAIKAN: Komponen CarLane yang hilang ditambahkan kembali ---
 const CarLane = ({ cars, gardu }) => (
   <div className="relative h-full w-32 flex flex-col items-center">
     {/* Gardu di atas */}
@@ -82,9 +76,7 @@ const CarLane = ({ cars, gardu }) => (
   </div>
 );
 
-// ====================================================================
 // KOMPONEN UTAMA APLIKASI
-// ====================================================================
 function App() {
   const [config, setConfig] = useState({ garduOtomatis: 3, garduManual: 2, mobilPerMenit: 45, persentaseEToll: 85, durasiSimulasiDetik: 300, polaTrafik: 'stabil' });
   const [simulationResult, setSimulationResult] = useState(null);
